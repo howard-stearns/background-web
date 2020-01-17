@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <title>Driver</title>
+  </head>
+  <body>
+    <h1>Driver</h1>
+    <p>See <a href="index.html">root</a>.</p>
+
+    <p><button id="startButton" onclick="startClick()">Start</button> sending messages.</p>
+    <p><button id="stopButton" onclick="stopClick()" disabled="true">Stop</button> sending messages.</p>
+    <p><label for="frequency">Frequency:</label><input id="frequency" type="number" value="1"></input> message per second</p>
+    <p>Sent <span id="sent">0</span> messages.</p>
+    <p>Received <span id="received">0</span> messages.</p>
+    
+    <script src="https://croquet.studio/sdk/croquet-latest.min.js"></script>
+    <script src="messenger.js"></script>
+    <script src="driver.js"></script>    
+  </body>
+</html> 
