@@ -2,9 +2,48 @@
 <html lang="en" >
   <body>
     <h1>Simple Page</h1>
-    <p>See <a href="index.html">root</a>.</p>
+    <p>See <a href="index.html">root</a>. This particular non-driver page is a simple all-in-one page that sends 'pong' when it receives a 'ping'.</p>
 
     <p>Recevied and replied to <span id="replied">0</span> messages.</p>
+    <p><button id="reset" onclick="resetClick()">Reset</button> counter.</p>
+
+    <h2>Results</h2>
+    <p>When this page is not "on top", it doesn't send anything back.</p>
+    <table>
+      <tr>
+        <th></th>
+        <th>OSX/Safari</th>
+        <th>OSX/Chrome</th>
+        <th>iOS/Safari</th>
+        <th>iOS/Chrome</th>
+        <th>Android chrome</th>
+      </tr>
+      <tr>
+        <th>in other tab</th>
+        <td>fails</td>
+        <td>fails</td>
+        <td>fails</td>
+        <td>fails</td>
+        <td>?</td>
+      </tr>
+      <tr>
+        <th>browser not showing</th>
+        <td>fails</td>
+        <td>fails</td>
+        <td>fails</td>
+        <td>fails</td>
+        <td>?</td>
+      </tr>
+      <tr>
+        <th>main tab/app, but black display</th>
+        <td>fails</td>
+        <td>fails</td>
+        <td>fails</td>
+        <td>fails</td>
+        <td>?</td>
+      </tr>
+    </table>
+    
 
     <script src="https://croquet.studio/sdk/croquet-latest.min.js"></script>
     <script src="messenger.js"></script>

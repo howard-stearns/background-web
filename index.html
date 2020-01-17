@@ -6,8 +6,16 @@
   <body>
     <h1>Background Web</h1>
     <p>A set of experiments testing the circumstances under which a Web page can do work - e.g., receive messages - and be kept alive rather than sleeping, etc.</p>
+    <h2>instructions</h2>
+    <p>Open the driver on a stable machine. This is where you start pinging, and it counts the pings and the return pongs.</p>
+    <p>On the device you want to test (which can be the same machine or a different one), open any of the other (non-driver) links below.</p>
+    <p>You should see the counter on both pages going up. However, on the non-driver page, you can switch to another tab, or minimize the browser, or let the machine go to sleep, etc. The idea is to see whether or the driver "received" messages continue to go up.</p>
+    <p>The different non-driver pages use different forms of background worker pages.<p>
     
     <p><a href="driver.html">driver</a></p>
+    <h3>Non-driver pages:</h3>
     <p><a href="simple.html">simple page</a></p>
+    <p><i>todo</i> web worker</p>
+    <p><i>todo</i> service worker</p>    
   </body>
 </html> 
